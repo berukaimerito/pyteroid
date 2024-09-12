@@ -40,9 +40,9 @@ def main():
                 game_over = True
                 print("Game over looser")
             for bullet in projectiles:
-                if bullet.colision_check(ast):
+                if bullet.collision_check(ast):
                     bullet.kill()
-                    ast.kill()
+                    ast.split()
         pygame.display.flip()
 
     print("Starting asteroids!")
